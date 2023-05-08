@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&family=Quicksand:wght@300;400&family=Shadows+Into+Light&display=swap');
+
+body{
+    font-family: 'Shadows Into Light', cursive;
+    color: white;   
+    background-image: url(Img/imagem_1.gif);
+    background-repeat: repeat;
+}
+
+.container{
+    display: flex;
+}
+
+.container-inicial{
+    width: 29%;
+    margin: 1em;
+    
+}
+
+.container-inicial-um{
+    width: 100%;
+    border-radius: 12px;
+    padding: 2em 0;
+    background-image: url(Img/fotoINICIO.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 1em 0;
+}
+
+.minha-foto{
+    width: 35%;
+    border-radius: 100%;
+    margin: 0 0 1em 0;
+    border: 1px solid white;
+    padding: 1px;
+    
+}
+
+.minha-foto:hover{
+    /*Animação*/
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulseBlue 1.5s infinite;
+    /*Animação*/
+}
+
+.titulo-container-inicial{
+    font-size: 30px;
+}
+
+.container-inicial-dois{
+    background-color: rgba(10,23,55,0.5);
+    padding: 1em;
+    border-radius: 12px;
+    font-size: 22px;
+}
+
+.subtitulo-resumo {
+    color: #95999C;
+    margin: 5px 0;
+}
+
+.resumo{
+    width: 99%;
+}
+
+.quebra{
+    padding: 10px;
+    margin: 0 auto 10px;
+    border-bottom: 1px solid #95999C;
+}
+
+.habilidades{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 0 1em; 
+}
+
+.habilidade{
+    margin: 5px;
+    font-size: 16px;
+}
+
+/*Container do meio*/
+
+.container-do-meio{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 12px;
+    width: 30%;
+    height: fit-content;
+}
+
+.nome-titulo{
+    font-size: 50px;
+    margin: 0 0 10px;
+    
+}
+.nome-completo{
+   color: #95999C;
+   border-bottom: 1px solid white;
+   margin-bottom: 10px;
+   padding-bottom: 10px;
+}
+
+.mini-resumo{
+    display: flex;
+    flex-direction: column;
+}
+
+.mini{
+    width: 90%;
+    background-color: rgba(10,23,55,0.5);
+    padding: 1em;
+    border-left: 1px solid white;
+    margin: 1em auto;
+    
+}
+
+.titulos-mini{
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.contato-topico{
+    text-decoration: none;
+    color: white;
+    margin: 1.2em 0;
+}
+
+.resumo{
+    font-size: 18px;
+}
+
+/*Ultimo container*/
+
+.ultimo-container{
+        display: flex;
+        flex-direction: column;
+        padding: 1em 0;
+        margin: 1em;
+        border-radius: 12px;
+        width: 30%;
+        height: fit-content;
+}
+
+.conhecimentos{
+    font-size: 30px;
+    text-align: center;
+}
+
+.mini-fim{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagem-logo{
+    width: 20%;
+}
+
+.ti-logos{
+    font-size: 14px;
+}
+
+.logos-do-inicio{
+    width: 30px;
+}
+
+.meus-links-trabalho{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0 0;
+}
+
+
+/*Animações*/
+@keyframes pulseBlue {
+
+    0% {
+     box-shadow: 0 0 0 0 rgb(1, 41, 76);
+    }
+   
+    70% {
+     box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+   
+    100% {
+     box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+    
+}
+
+@media (min-width: 1000px){
+    .imagem-logo{
+        width: 40px;
+    }
+}
+
+@media (max-width:1100px){
+   .titulo-container-inicial{
+    font-size: 22px;
+   }
+   .subtitulo-resumo{
+    font-size: 18px;
+   }
+   .resumo{
+    font-size: 16px;
+    width: 100%;
+   }
+   .habilidade{
+    font-size: 15px;
+   }
+   .contato-topico{
+    font-size: 14px;
+   }
+   .titulos-mini{
+    font-size: 16px;
+   }
+   .tx{
+    font-size: 15px;
+   }
+   .ultimo-container{
+        width: 20%;
+   }
+   .container-do-meio{
+    width: 40%;
+    margin: 1em 0;
+   }
+   .mini-fim{
+    margin: 10px auto;
+   }
+}
+
+@media (max-width:910px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .imagem-logo{
+        width: 60px;
+    }
+    .container-inicial{
+        width: 550px;
+    }
+    .container-do-meio{
+        width: 550px;
+    }
+    .ultimo-container{
+        width: 550px;
+    }
+    .nome-titulo, .nome-completo{
+        text-align: center;
+    }
+}
+
+@media (max-width:622px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .imagem-logo{
+        width: 60px;
+    }
+    .container-inicial{
+        width: 90%;
+    }
+    .container-do-meio{
+        width: 90%;
+    }
+    .ultimo-container{
+        width: 90%;
+    }
+}
